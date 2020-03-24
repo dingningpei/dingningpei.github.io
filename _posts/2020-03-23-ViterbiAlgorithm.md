@@ -15,7 +15,7 @@ Markove Chains is a directed graphical model. It tell us about the probability o
 
 Exampe:
 
-![Figure A.1](figure1.png)
+![Figure A.1](https://raw.githubusercontent.com/dingningpei/dingningpei.github.io/master/_posts/figure1.png)
 
 <center> Figure 1 - Directed Graphical Model  </center>
 
@@ -66,8 +66,8 @@ $$
 P(o_{i}\mid q_{1},...,q_{T}, o_{1},...,o_{T}) = P(o_{i} \mid q_{i})
 $$
 
-![Figure A.1](figure2.png)
-<center> Figure 1 - HMM  </center>
+![Figure A.1](https://raw.githubusercontent.com/dingningpei/dingningpei.github.io/master/_posts/figure2.png)
+<center> Figure 2 - HMM  </center>
 
 # Forward Algorithm
 
@@ -94,7 +94,7 @@ $\alpha_{ij}$: the transition probability from previous state $q_{i}$ to current
 
 $b_{j}(o_{t})$: the state observation likelihood of the observation symbol $o_{t}$ given the current state j
 
-![Figure A.1](figure3.png)
+![Figure A.1](https://raw.githubusercontent.com/dingningpei/dingningpei.github.io/master/_posts/figure3.png)
 <center> Figure 3 - Forward Trellis  </center>
 
 1. Initialization:
@@ -132,7 +132,7 @@ $$v_{t}(j) = \max_{i=1}^{N}v_{t-1}\alpha_{ij}b_{j}(o_{t})$$
 2. BackPointers
 In Viterbi algorithm must produce the probability which the forward algorithm produces either , and also the most likely state sequence. So all the most likely state in each T time are recorded in `BackPointers`. After that, at the end of the T, it is more convenient to back trace the best path to the beginning. 
 
-![Figure A.1](figure4.png)
+![Figure A.1](https://raw.githubusercontent.com/dingningpei/dingningpei.github.io/master/_posts/figure4.png)
 <center> Figure 4 - BackTrace Trellis  </center>
 
 3. Algorithm

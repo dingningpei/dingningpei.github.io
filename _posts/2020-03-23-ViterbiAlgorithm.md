@@ -156,7 +156,7 @@ State-graph of len N
    $$
 
    $$
-   back_{t}(j) = \argmax_{i=1}^{N}v_{t-1}(i)\alpha_{ij}b_{j}(o_{t}); 1 \le j \le N, 1 \le t \le T
+   back_{t}(j) = argmax_{i=1}^{N}v_{t-1}(i)\alpha_{ij}b_{j}(o_{t}); 1 \le j \le N, 1 \le t \le T
    $$
 
 3. Termination
@@ -164,7 +164,7 @@ State-graph of len N
 
    The best score at T $=\max_{i=1}^{N}v_{T}(i)$
 
-   The start of back trace $\argmax_{i=1}^{N}v_{T}(i)$ 
+   The start of back trace $=argmax_{i=1}^{N}v_{T}(i)$ 
    
    Use the start of back trace to keep tracking the states in $back$, then the most likely state sequence will be got.
 
